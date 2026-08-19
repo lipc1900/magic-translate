@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic Translate</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Magic Translate</h1>
+    <p class="sub">一键整页英文翻译成中文</p>
+
+    <label for="apiKey">DeepSeek API Key</label>
+    <input id="apiKey" type="password" placeholder="sk-..." autocomplete="off" />
+    <p class="hint">
+      在 <a href="https://platform.deepseek.com" target="_blank" rel="noreferrer">platform.deepseek.com</a> 创建
+    </p>
+
+    <label for="targetLang">目标语言</label>
+    <select id="targetLang">
+      <option value="简体中文">简体中文</option>
+    </select>
+
+    <button id="save">保存</button>
+    <p id="status"></p>
+
+    <p class="tip">点击工具栏图标、或按 Alt+T、或右键「翻译本页为中文」即可翻译/还原当前页面。本页用于填写 API Key（右键扩展图标 →「选项」可再次打开）。</p>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
